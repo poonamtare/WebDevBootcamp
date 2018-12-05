@@ -1,0 +1,1 @@
+All the practice exercises from Bootcamp for Web Development
