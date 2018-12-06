@@ -16,7 +16,6 @@ app.get("/dogs", function(req, res){
     res.send("Bow Wow!");
 });
 
-
 //In order to create patterns for route parameters we use ':'
 app.get("/r/:subredditName", function(req, res){
     var subreddit = req.params.subredditName; 
