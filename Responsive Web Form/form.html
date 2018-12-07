@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="formStyle.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title"> Here's how you can catch hold of me...</h1>
+  <hr>
+  <p id="description"> Let's connect!!</p>
+  <div class="container">
+    <form id="survey-form">
+        <div class="row">
+          <div class="labels">
+            <label for="name" id="name-label">* Name: </label>
+          </div>
+          <div class="inputTab">
+            <input type="text" id="name" name="name" class="input-field" placeholder=" Enter your name" autofocus required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="labels">
+            <label for="email" id="email-label">* Email: </label>
+          </div>
+          <div class="inputTab">
+            <input type="email" id="email" name="email" class="input-field" placeholder=" Email is the best way to reach me folks!" autofocus required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="labels">
+            <label for="Number" id="number-label"> Age: </label>
+          </div>
+          <div class="inputTab">
+            <input type="number" min="0" max="100" id="Number" name="Number" class="input-field" placeholder=" Enter your Age...don't cheat now.." autofocus>
+          </div>
+        </div>
+        <div class="row">
+          <div class="labels">
+            <label for="Whoyou" id="reason-label"> How do we know each other? </label>
+          </div>
+          <div class="inputTab">
+            <select id="dropdown" class="dropdown" name="Whoyou">
+                <option disabled value>Select an option</option>
+                <option  value="Recruiter">Recruiter</option>
+                <option value="Colleague">Colleague</option>
+                <option value="Friend">Friend</option>
+                <option value="Other">Random! just to hit you up.</option>        
+            </select>
+          </div>
+        </div>
+      <div class="row">
+        <div class="labels">
+          <label for="whatdo">* Wanna hang for?</label>
+        </div>
+          <div class="inputTab">
+            <ul style="list-style: none;">
+              <li class="radio"><label class="radioB" for="radio1">Regarding job opportunity...Yayyy!<input id="radio1" name="radio-buttons" value="Job"  type="radio" class="userRatings" ></label></li>
+              <li class="radio"><label class="radioB" for="radio2">Catch up over coffee.<input id="radio2" name="radio-buttons" value="Meetup"  type="radio" class="userRatings" ></label></li>
+              <li class="radio"><label class="radioB" for="radio3">Rue over existential crisis together...<input id="radio3"name="radio-buttons" value="friendRant"  type="radio" class="userRatings" ></label></li>
+            </ul>
+          </div>
+    </div>
+    <div class="row">
+      <div class="labels">
+        <label for="Interests">What's your groove?<br>(Check all that apply): </label>
+      </div>
+      <div class="inputTab">
+        <ul id="Interests" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="Front-end" type="checkbox" class="userRatings">Front-end Projects</label></li>
+          <li class="checkbox"><input name="prefer" value="Back-end" type="checkbox" class="userRatings">Back-end Projects</li>
+          <li class="checkbox"><label><input name="prefer" value="Tech conversations" type="checkbox" class="userRatings">Conversations about technology<br>(AI, Blockchain...)</label></li>
+          <li class="checkbox"><label><input name="prefer" value="books" type="checkbox" class="userRatings">Books Books Books</label></li>
+          <li class="checkbox"><label><input name="prefer" value="Philosophy" type="checkbox" class="userRatings">Philosophy</label></li>
+          <li class="checkbox"><label><input name="prefer" value="health" type="checkbox" class="userRatings">Health, Nutrition and Exercise</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="labels">
+        <label for="comments">Any Comments?<br> Anything else I should know about you..</label>
+      </div>
+      <div class="inputTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
